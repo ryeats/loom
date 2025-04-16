@@ -1,4 +1,6 @@
-Demonstrating how to use loom to test multithreaded code inspired by https://jbaker.io/2022/05/09/project-loom-for-distributed-systems/ but with java 24 it is even cooler since Virtual threads won't hang when they hit a synchronized block anymore. You need java 24 installed and jvm arg of --add-opens=java.base/java.lang=ALL-UNNAMED.
+Demonstrating using loom to test multithreaded code. This example is inspired by https://jbaker.io/2022/05/09/project-loom-for-distributed-systems.  With java 24 this is even better since Virtual threads don't hang when they hit a synchronized blocks anymore. 
+
+To run this ou need java 24 installed and pass a jvm argument of --add-opens=java.base/java.lang=ALL-UNNAMED.
 
 ```sh
 java -jar --add-opens=java.base/java.lang=ALL-UNNAMED target/loom-1.0-SNAPSHOT.jar
